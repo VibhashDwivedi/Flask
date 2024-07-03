@@ -16,5 +16,9 @@ init_db(app)
 def index():
     return render_template('index.html')
 
+@app.route('/form')
+def show_form():
+    return render_template('userForm.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
